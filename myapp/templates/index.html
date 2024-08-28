@@ -1,11 +1,11 @@
  
-{% load static %}
+{% load static %} <!-- Carrega a tag 'static' para uso nos caminhos dos arquivos estáticos -->
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Adiciona a meta tag para responsividade -->
 
     <title>Página Inicial</title>
     
@@ -18,7 +18,8 @@
 
 <body>
 
-    <div class="container">
+    <div class="container">  <!-- Usa um container Bootstrap para centralizar o conteúdo -->
+
         <h1 class="p2 m2">Imagem do Python Django</h1>
         <img class="img-thumbnail"  
              src="{% static 'myapp/images/pythondjango.jpg' %}" 
