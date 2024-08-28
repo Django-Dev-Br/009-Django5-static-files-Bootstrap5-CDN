@@ -3,7 +3,7 @@
 
 Neste repositório, o Boostrap é adicionado via CDN que é uma rede de entrega de conteúdo através da internet. 
 
-Na sequência, no próximo repositório desta série. Iremos baixar o boostrat via download, seguindo uma boa prática de desenvolvimento para acessá-lo localmente ao invés da internet.
+Na sequência, no [próximo repositório desta série](https://github.com/Django-Dev-Br/010-Django-4-Static-Files-Bootstrap5-local). Iremos baixar o boostrat via download, seguindo uma boa prática de desenvolvimento para acessá-lo localmente ao invés da internet.
 
 ### O que é Bootstrap?
 
