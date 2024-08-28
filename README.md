@@ -119,7 +119,7 @@ Aqui está o código HTML usado para adicionar o Boostrap 5.3.3 ao projeto:
 ### Estrutura de Diretórios do Projeto
 
 ```
-008-django4-static-files/
+009-Django-4-static-files-Bootstrap5-CDN/
 ├── manage.py
 ├── myapp/
 │   ├── __init__.py
