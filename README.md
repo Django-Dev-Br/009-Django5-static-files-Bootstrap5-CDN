@@ -101,6 +101,7 @@ Aqui está o código HTML usado para adicionar o Boostrap 5.3.3 ao projeto:
     <div class="container">  <!-- Usa um container Bootstrap para centralizar o conteúdo -->
 
         <h1 class="p-2 m-2">Imagem do Python Django</h1>
+
         <img class="img-thumbnail"  
              src="{% static 'myapp/images/pythondjango.jpg' %}" 
              alt="Python Django"
