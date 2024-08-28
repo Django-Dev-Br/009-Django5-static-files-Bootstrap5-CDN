@@ -1,6 +1,10 @@
 
 # 009 Django 4 Static Files - Bootstrap5
 
+Neste repositório, o Boostrap é adicionado via CDN que é uma rede de entrega de conteúdo através da internet. 
+
+Na sequência, no próximo repositório desta série. Iremos baixar o boostrat via download, seguindo uma boa prática de desenvolvimento para acessá-lo localmente ao invés da internet.
+
 ### O que é Bootstrap?
 
 Bootstrap é um dos frameworks front-end mais populares do mundo, projetado para facilitar a criação de sites responsivos e com foco em dispositivos móveis. Criado originalmente pelo Twitter, Bootstrap fornece uma coleção de ferramentas CSS e JavaScript que ajudam os desenvolvedores a construir interfaces de usuário consistentes e atraentes rapidamente. Com Bootstrap, é possível adicionar componentes como botões, formulários, menus de navegação e muito mais, utilizando classes pré-definidas que seguem as melhores práticas de design responsivo. Além disso, o Bootstrap é facilmente integrável com outros frameworks e bibliotecas, tornando-se uma escolha popular para desenvolvedores de todos os níveis.
