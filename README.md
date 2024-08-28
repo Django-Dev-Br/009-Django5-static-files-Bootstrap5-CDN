@@ -75,7 +75,7 @@ Melhor tutorial: [https://www.w3schools.com/bootstrap5/](https://www.w3schools.c
 
 7. **Acesse a aplicação no seu navegador**:
 
-   Vá para [http://127.0.0.1:8000/](http://127.0.0.1:8000/) e você verá a imagem `pythondjango.jpg` sendo exibida na página inicial. Compare com o design do repositório 008
+   Vá para [http://127.0.0.1:8000/](http://127.0.0.1:8000/) e você verá a imagem `pythondjango.jpg` sendo exibida na página inicial. Compare com o design do [repositório 008](https://github.com/Django-Dev-Br/008-Django-4-static-files)
 
 ### Código HTML 
 
