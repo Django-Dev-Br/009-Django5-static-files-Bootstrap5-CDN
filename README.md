@@ -10,16 +10,6 @@ Documentação oficial: [https://getbootstrap.com/docs/5.3/getting-started/intro
 Melhor tutorial: [https://www.w3schools.com/bootstrap5/](https://www.w3schools.com/bootstrap5/)
 
 
-### Coletando Arquivos Estáticos para Produção
-
-Quando estiver pronto para implantar seu projeto Django em produção, é necessário coletar todos os arquivos estáticos em um único diretório definido por `STATIC_ROOT`. Isso permite que o servidor web sirva esses arquivos de forma eficiente. Para coletar todos os arquivos estáticos, use o comando:
-
-```bash
-python manage.py collectstatic
-```
-
-Este comando irá procurar todos os arquivos estáticos nos diretórios especificados em `STATICFILES_DIRS` e nas pastas `static/` de cada aplicativo, e copiá-los para o diretório definido por `STATIC_ROOT`.
-
 ## COMO RODAR ESSE PROJETO EM SEU COMPUTADOR:
 
 ### Requisitos
@@ -143,6 +133,16 @@ Aqui está o código HTML usado para adicionar o Boostrap 5.3.3 ao projeto:
         └── images/
             └── pythondjango.jpg  # Imagem a ser exibida
 ```
+
+### OBS: Coletando Arquivos Estáticos para Produção
+
+Quando estiver pronto para implantar seu projeto Django em produção, é necessário coletar todos os arquivos estáticos em um único diretório definido por `STATIC_ROOT`. Isso permite que o servidor web sirva esses arquivos de forma eficiente. Para coletar todos os arquivos estáticos, use o comando:
+
+```bash
+python manage.py collectstatic
+```
+
+Este comando irá procurar todos os arquivos estáticos nos diretórios especificados em `STATICFILES_DIRS` e nas pastas `static/` de cada aplicativo, e copiá-los para o diretório definido por `STATIC_ROOT`.
 
 ### Sobre Nosso Treinamento Prático-Profissional com projeto real para iniciantes e avançados em web DevOps Full-stack com Python, Django, Bootstrap e Linux.
 
