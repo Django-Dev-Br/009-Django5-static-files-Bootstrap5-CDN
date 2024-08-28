@@ -126,7 +126,7 @@ Aqui está o código HTML usado para adicionar o Boostrap 5.3.3 ao projeto:
 │   ├── apps.py
 │   ├── views.py           # Contém a função 'index' para renderizar 'index.html'
 │   └── templates/
-│       └── index.html     # Página HTML que carrega a imagem estática
+│       └── index.html     # Página HTML com Bootstrap 5 via CDN
 ├── myproject/
 │   ├── __init__.py
 │   ├── asgi.py
