@@ -1,5 +1,5 @@
 
-# 009 Django 4 Static Files - Bootstrap5
+# 009 Django 4 Static Files - Bootstrap5 via CDN
 
 Neste repositório, o Boostrap é adicionado via CDN que é uma rede de entrega de conteúdo através da internet. 
 
@@ -41,8 +41,8 @@ Melhor tutorial: [https://www.w3schools.com/bootstrap5/](https://www.w3schools.c
 
 1. **Clone o repositório**:
     ```bash
-    git clone https://github.com/Django-Dev-Br/009-Django-4-static-files-Bootstrap5.git
-    cd 009-Django-4-static-files-Bootstrap5
+    git clone https://github.com/Django-Dev-Br/009-Django-4-static-files-Bootstrap5-CDN.git
+    cd 009-Django-4-static-files-Bootstrap5-CDN
     ```
 
 2. **Crie um ambiente virtual**:
