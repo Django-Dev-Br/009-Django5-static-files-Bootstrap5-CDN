@@ -1,15 +1,13 @@
 
-# 008 Django 4 Static Files Example
+# 009 Django 4 Static Files - Bootstrap5
 
-### O que são Arquivos Estáticos no Django?
+### O que é Bootstrap?
 
-Arquivos estáticos no Django referem-se a arquivos que não mudam em resposta às interações do usuário, como CSS, JavaScript e imagens. Eles são essenciais para o design e a funcionalidade de um site, mas não contêm conteúdo dinâmico. No Django, esses arquivos são gerenciados usando a configuração de arquivos estáticos, que permite coletar, servir e referenciar esses arquivos de forma organizada e eficiente. A configuração abaixo é adiciona ao arquivo settings.py do projeto Django.
+Bootstrap é um dos frameworks front-end mais populares do mundo, projetado para facilitar a criação de sites responsivos e com foco em dispositivos móveis. Criado originalmente pelo Twitter, Bootstrap fornece uma coleção de ferramentas CSS e JavaScript que ajudam os desenvolvedores a construir interfaces de usuário consistentes e atraentes rapidamente. Com Bootstrap, é possível adicionar componentes como botões, formulários, menus de navegação e muito mais, utilizando classes pré-definidas que seguem as melhores práticas de design responsivo. Além disso, o Bootstrap é facilmente integrável com outros frameworks e bibliotecas, tornando-se uma escolha popular para desenvolvedores de todos os níveis.
 
-- **STATIC_URL**: É a URL que refere-se aos arquivos estáticos. No nosso projeto, está definida como `'/static/'`, o que significa que todos os arquivos estáticos estarão acessíveis sob essa URL.
+Documentação oficial: [https://getbootstrap.com/docs/5.3/getting-started/introduction/](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+Melhor tutorial: [https://www.w3schools.com/bootstrap5/](https://www.w3schools.com/bootstrap5/)
 
-- **STATICFILES_DIRS**: É uma lista de diretórios onde o Django procurará arquivos estáticos adicionais, além da pasta `static/` dentro de cada app. No nosso projeto, foi configurada para incluir a pasta `static/` no diretório raiz do projeto.
-
-- **STATIC_ROOT**: Durante o desenvolvimento, o Django serve arquivos estáticos diretamente. No entanto, em produção, todos os arquivos estáticos devem ser coletados em um único diretório definido por `STATIC_ROOT` e servidos por um servidor web dedicado.
 
 ### Coletando Arquivos Estáticos para Produção
 
@@ -48,8 +46,8 @@ Este comando irá procurar todos os arquivos estáticos nos diretórios especifi
 
 1. **Clone o repositório**:
     ```bash
-    git clone https://github.com/Django-Dev-Br/008-Django-4-static-files.git
-    cd 008-Django-4-static-files
+    git clone https://github.com/Django-Dev-Br/009-Django-4-static-files-Bootstrap5.git
+    cd 009-Django-4-static-files-Bootstrap5
     ```
 
 2. **Crie um ambiente virtual**:
@@ -82,27 +80,44 @@ Este comando irá procurar todos os arquivos estáticos nos diretórios especifi
 
 7. **Acesse a aplicação no seu navegador**:
 
-   Vá para [http://127.0.0.1:8000/](http://127.0.0.1:8000/) e você verá a imagem `pythondjango.jpg` sendo exibida na página inicial.
+   Vá para [http://127.0.0.1:8000/](http://127.0.0.1:8000/) e você verá a imagem `pythondjango.jpg` sendo exibida na página inicial. Compare com o design do repositório 008
 
 ### Código HTML 
 
-Aqui está o código HTML usado para carregar a imagem estática usando o template `index.html`:
+Aqui está o código HTML usado para adicionar o Boostrap 5.3.3 ao projeto:
 
 ```
-{% load static %}  <!-- Carrega a tag 'static' para uso nos caminhos dos arquivos estáticos -->
+ 
+{% load static %} <!-- Carrega a tag 'static' para uso nos caminhos dos arquivos estáticos -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Adiciona a meta tag para responsividade -->
+
     <title>Página Inicial</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
+
 <body>
-    <h1>Imagem do Python Django</h1>
-    <!-- Usa a tag 'static' para definir o caminho da imagem estática -->
-    <img src="{% static 'myapp/images/pythondjango.jpg' %}" alt="Python Django">
+
+    <div class="container">  <!-- Usa um container Bootstrap para centralizar o conteúdo -->
+
+        <h1 class="p-2 m-2">Imagem do Python Django</h1>
+        <img class="img-thumbnail"  
+             src="{% static 'myapp/images/pythondjango.jpg' %}" 
+             alt="Python Django"
+             width="60%">
+    </div>
+    
 </body>
 </html>
-
 ```
 
 ### Estrutura de Diretórios do Projeto
