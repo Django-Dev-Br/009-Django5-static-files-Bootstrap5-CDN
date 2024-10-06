@@ -33,7 +33,7 @@ Melhor tutorial: [https://www.w3schools.com/bootstrap5/](https://www.w3schools.c
 
 1. **Clone o repositório**:
     ```bash
-    git clone hhttps://github.com/Django-Dev-Br/009-Django5-static-files-Bootstrap5-CDN.git
+    git clone https://github.com/Django-Dev-Br/009-Django5-static-files-Bootstrap5-CDN.git
     ```
 
 2. **Crie um ambiente virtual**:
